@@ -3,24 +3,32 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  text-align: center;
-  background: url('./theplace.png') no-repeat center center fixed;
-  background-size: cover;
-}
-h1 {
-  font-size: 5em;
-}
-p {
-  font-size: 4em;
-  margin-top: 1em;
-}
+  body {
+    text-align: center;
+    background: url('./theplace.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  article {
+    width: 50%;
+    margin: 10% auto;
+    background: rgba(0,0,0,0.5);
+    padding: 0.5%;
+    color: rgb(150, 200, 175);
+  }
+  h1 {
+    font-size: 5em;
+  }
+  p {
+    font-size: 4em;
+    margin-top: 1em;
+  }
 </style>
 </head>
 <body>
-<h1>The MiMaMai Day</h1>
-<p id="theday"></p>
-
+  <article>
+    <h1>The MiMaMai Day</h1>
+    <p id="theday"></p>
+  </article>
 <script>
 const theday = new Date("May 1, 2026 12:00:00").getTime();
 
@@ -40,6 +48,5 @@ let x = setInterval(function() {
   }
 }, 1000);
 </script>
-
 </body>
 </html>
